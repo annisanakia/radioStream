@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SPIN THE RADIO FM</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid container-xxl d-flex align-items-center justify-content-between">
+
+      <div id="logo" class="me-auto">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+        <a href="index.html" class="scrollto">
+          <img src="assets/img/logo_radio.png" alt="" class="logo" title="">
+          <img src="assets/img/logo_black.png" alt="" class="logo_black" title="">
+        </a>
+      </div>
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div class="d-flex mb-2">
+        <div class="me-2">
+          <h1 class="mb-3 pb-0">SPIN THE RADIO FM</h1>
+          <p class="mb-3 pb-0">Kolaborasi mahasiswa esa unggul</p>
+        </div>
+        <audio id="track">
+          <source src="http://34.101.95.22:8000/spintheradio" type="audio/mpeg" />
+        </audio>
+        <div id="play-btn" class="play-btn mb-4 play mx-auto"></div>
+      </div>
+      <div class="row text-white mt-4">
+        <div class="col-md-2">
+          <img src="assets/img/teams/3.jpg" alt="Team 2" class="object-fit-cover mb-3" data-aos="zoom-in" data-aos-delay="100">
+          <br><b>Nama Siapa Ya Kamu</b><br>
+          Initiator
+        </div>
+        <div class="col-md-2">
+          <img src="assets/img/teams/2.jpg" alt="Team 2" class="object-fit-cover mb-3" data-aos="zoom-in" data-aos-delay="200">
+          <br><b>Nama Siapa Ya Kamu</b><br>
+          Initiator
+        </div>
+        <div class="col-md-2">
+          <img src="assets/img/teams/4.jpg" alt="Team 2" class="object-fit-cover mb-3" data-aos="zoom-in" data-aos-delay="300">
+          <br><b>Nama Siapa Ya Kamu</b><br>
+          Initiator
+        </div>
+        <div class="col-md-2">
+          <img src="assets/img/teams/1.jpg" alt="Team 2" class="object-fit-cover mb-3" data-aos="zoom-in" data-aos-delay="400">
+          <br><b>Nama Siapa Ya Kamu</b><br>
+          Initiator
+        </div>
+        <div class="col-md-2">
+          <img src="assets/img/teams/3.jpg" alt="Team 2" class="object-fit-cover mb-3" data-aos="zoom-in" data-aos-delay="500">
+          <br><b>Nama Siapa Ya Kamu</b><br>
+          Initiator
+        </div>
+        <div class="col-md-2">
+          <img src="assets/img/teams/2.jpg" alt="Team 2" class="object-fit-cover mb-3" data-aos="zoom-in" data-aos-delay="600">
+          <br><b>Nama Siapa Ya Kamu</b><br>
+          Initiator
+        </div>
+      </div>
+      <div class="row text-white mt-4">
+        <div class="col-md-4">
+          <img src="assets/img/teams/2.jpg" alt="Team 2" class="object-fit-cover mb-3" data-aos="zoom-in" data-aos-delay="100">
+          <br><b>Nama Siapa Ya Kamu</b><br>
+          Developer
+        </div>
+        <div class="col-md-4">
+          <img src="assets/img/teams/4.jpg" alt="Team 2" class="object-fit-cover mb-3" data-aos="zoom-in" data-aos-delay="200">
+          <br><b>Nama Siapa Ya Kamu</b><br>
+          Developer
+        </div>
+        <div class="col-md-4">
+          <img src="assets/img/teams/1.jpg" alt="Team 2" class="object-fit-cover mb-3" data-aos="zoom-in" data-aos-delay="300">
+          <br><b>Nama Siapa Ya Kamu</b><br>
+          Dosen Pembimbing
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+<script>
+  var track = document.getElementById('track');
+  var controlBtn = document.getElementById('play-btn');
+  
+  function playPause() {
+      if (track.paused) {
+          track.play();
+          //controlBtn.textContent = "Pause";
+          controlBtn.className = "play-btn mb-4 pause";
+      } else { 
+          track.pause();
+           //controlBtn.textContent = "Play";
+          controlBtn.className = "play-btn mb-4 play";
+      }
+  }
+  
+  controlBtn.addEventListener("click", playPause);
+  track.addEventListener("ended", function() {
+    controlBtn.className = "play-btn mb-4 play";
+  });
+</script>
+
+</html>
